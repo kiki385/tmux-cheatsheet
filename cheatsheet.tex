@@ -70,12 +70,27 @@
         ctrl+b,z                                    &   \textit{toggle} \textit{zoomiranja} \textit{pane}-a (fokusira ga)     \\ \hline
     \end{tabular}
 
+    % Copy mode
+    \section*{\color{ForestGreen} Copy mode}
+    \begin{itemize}
+        \item u konfiguracijskoj datoteci niže postavljena je \textit{Vi style} navigacija kroz \textit{copy mode}
+    \end{itemize}
+    \begin{tabular}{|>{\tt}p{9.00cm}|>{}p{15.50cm}|}
+        \hline
+        ctrl+b,[                                    &   ulazak u \textit{copy mode}                                                 \\ \hline
+        <space>                                     &   početak označavanja teksta                                                  \\ \hline
+        <esc>                                       &   odustajanje / izlazak iz \textit{copy mode}-a                               \\ \hline
+        <enter>                                     &   kraj označavanja teksta (\textit{copy}) i izlazak iz \textit{copy mode}-a   \\ \hline
+        ctrl+b,]                                    &   \textit{paste}                                                              \\ \hline
+    \end{tabular}
+
     % Customization
     \section*{\color{ForestGreen} Customization}
     \begin{itemize}
         \item \textit{tmux} konfiguracijska datoteka nalazi se u \texttt{$\sim$/.tmux.conf}
     \end{itemize}
     \texttt{
+        \footnotesize
         \lstinputlisting[language=bash]{.tmux.conf}
     }
 
