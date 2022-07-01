@@ -74,22 +74,21 @@
     \section*{\color{ForestGreen} Copy mode}
     \begin{itemize}
         \item u konfiguracijskoj datoteci niže postavljena je \textit{Vi style} navigacija kroz \textit{copy mode}
+        \item kako bi se omogućilo korištenje sistemskog \textit{clipboard}-a, instaliran je \texttt{xclip}
     \end{itemize}
     \begin{tabular}{|>{\tt}p{9.00cm}|>{}p{15.50cm}|}
         \hline
-        ctrl+b,[                                    &   ulazak u \textit{copy mode}                                                 \\ \hline
-        <space>                                     &   početak označavanja teksta                                                  \\ \hline
-        <esc>                                       &   prekid označavanja teksta                                                   \\ \hline
-        q                                           &   odustajanje / izlazak iz \textit{copy mode}-a                               \\ \hline
-        <enter>                                     &   kraj označavanja teksta (\textit{copy}) i izlazak iz \textit{copy mode}-a   \\ \hline
-        ctrl+b,]                                    &   \textit{paste}                                                              \\ \hline
+        ctrl+b,[                                    &   ulazak u \textit{copy mode}                                                                                         \\ \hline
+        <space>                                     &   početak označavanja teksta                                                                                          \\ \hline
+        <esc>                                       &   prekid označavanja teksta                                                                                           \\ \hline
+        q                                           &   odustajanje / izlazak iz \textit{copy mode}-a                                                                       \\ \hline
+        y                                           &   kraj označavanja teksta (\textit{copy} u sistemski \textit{clipboard}) i izlazak iz \textit{copy mode}-a            \\ \hline
+        <enter>                                     &   kraj označavanja teksta (\textit{copy} u \texttt{tmux}-ov \textit{clipboard}) i izlazak iz \textit{copy mode}-a     \\ \hline
+        ctrl+b,]                                    &   \textit{paste} iz \texttt{tmux}-ovog \texttt{clipboard}-a                                                           \\ \hline
     \end{tabular}
 
     % Customization
-    \section*{\color{ForestGreen} Customization}
-    \begin{itemize}
-        \item \textit{tmux} konfiguracijska datoteka nalazi se u \texttt{$\sim$/.tmux.conf}
-    \end{itemize}
+    \section*{\color{ForestGreen} Customization \texttt{$\sim$/.tmux.conf}}
     \texttt{
         \scriptsize
         \lstinputlisting[language=bash]{.tmux.conf}
